@@ -1,0 +1,119 @@
+package assignmentQueue;
+
+import java.util.Scanner;
+
+public class CircularQueueInt 
+{
+	int size;
+	int front;
+	int rear;
+	int arr[];
+	
+	CircularQueueInt(int size)
+	{
+		this.arr=new int[size];
+		this.size=size;
+		this.rear=-1;
+		this.front=0;
+	}
+	public void enQueue(int n)
+	{
+		if(rear==-1&&front==-1)
+		{
+			front=rear=0;
+			arr[rear]=n;
+			rear++;
+		}
+		else if((rear+1)%size==front)
+		{
+			System.out.println("QUEUE IS FULL");
+		}
+		else
+		{
+			rear=(rear+1)%size;
+			arr[rear]=n;
+		}
+	}
+	
+	public void deQueue()
+	{
+		if(front==-1&&rear==-1)
+		{
+			System.out.println("QUEUE IS EMPTY");
+		}
+		else if(front==rear)
+		{
+			System.out.println("REMOVED ELEMENT IS "+arr[front]);
+			front=rear=-1;
+		}
+		else
+		{
+			System.out.println("REMOVED ELEMENT IS "+arr[front]);
+			front=(front+1)%size;
+		}
+		
+		
+	}
+	public void display()
+	{
+		int i=front;
+		if(front == -1 && rear==-1)
+		{
+			System.out.println("Queue is empty");
+		}
+		else 
+			System.out.println("****QUEUE****");
+		while(i!=rear)
+		{
+			System.out.print(arr[i]+" ");
+			i=(i+i)%size;
+			
+		}
+		System.out.print(arr[rear]);
+		
+		
+	}
+	
+	public static void main(String[] args) 
+	{
+		CircularQueueInt c1;
+		System.out.println("ENTER THE SIZE OF QUEUE");
+		Scanner sc=new Scanner(System.in);
+		int size=sc.nextInt();
+		c1= new CircularQueueInt(size);
+		int choice;
+		do {
+			System.out.println("1.ENTER THE ELEMENT");
+			System.out.println("2.REMOVE THE ELEMENT");
+			System.out.println("3.DISPLAY THE ELEMENT");
+			System.out.println("0.DISPLAY");
+			choice=sc.nextInt();
+			switch(choice)
+			{
+			case 1:
+				System.out.println("ENTER THE VALUE TO INSERT");
+				int n=sc.nextInt();
+				c1.enQueue(n);
+				break;
+			case 2:
+				c1.deQueue();
+				break;
+			case 3:
+				c1.display();
+				break;
+			case 0:
+				break;
+			default:
+				System.out.println("INVALID QUEUE");
+				break;
+			
+			}
+			
+			}while(choice!=0);
+		
+		
+		
+		
+	}
+
+}

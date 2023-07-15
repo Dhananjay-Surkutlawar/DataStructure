@@ -1,0 +1,57 @@
+package dynamicStackBook;
+
+
+
+public class StackLL 
+{
+	BookNode top;
+
+	public StackLL() 
+	{
+		// TODO Auto-generated constructor stub
+		top=null;
+	}
+
+	public void push(Book n)
+	{
+		
+		BookNode record=new BookNode(n);
+		if(top == null)
+			top= record;
+		else if(!isEmpty())
+		{
+			{
+				record.setNext(top);;
+				top=record;
+			}
+		}
+
+		}
+
+		public void display()
+		{
+			BookNode move=top;
+			while(move!=null)
+			{
+				System.out.print(" "+move.data);
+				move=move.next;
+
+			}
+		}
+		public void pop()
+		{	if(!isEmpty())
+		{
+			System.out.println("DELETED ELEMENT IS "+top.data);
+			top=top.next;
+		}
+		else
+			System.out.println("Stack is empty");
+		}
+		public boolean isEmpty()
+		{
+			if( top == null)
+				return true;
+			else
+				return false;
+		}
+	}

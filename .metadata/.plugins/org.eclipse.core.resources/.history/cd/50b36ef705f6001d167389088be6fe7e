@@ -1,0 +1,31 @@
+package dynamicStackBook;
+
+public class BookNode 
+{
+	Book data; // book object
+	BookNode next; 
+	
+	public BookNode(Book b) 
+	{
+		
+		this.data = new Book(b.getBookid(),b.getName(),b.getPrice());
+		this.next=null;
+	
+	}
+	public Book getData()
+	{
+		return data;
+	}
+	public void setData(Book data)
+	{
+		this.data = data;
+	}
+	public BookNode getNext() 
+	{
+		return next;
+	}
+	public void setNext(BookNode next)
+	{
+		this.next = next;
+	}
+}

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="assignment3Stack.PrimeStack"/>
+    <fullyQualifiedTypeName name="assignment3Stack.BookStack"/>
+    <fullyQualifiedTypeName name="assignment3Stack.BracketsStack"/>
+    <fullyQualifiedTypeName name="assignmentQueue.QueueInteger"/>
+    <fullyQualifiedTypeName name="assignmentQueue.CustomerArry"/>
+    <fullyQualifiedTypeName name="assignmentQueue.QueueCustomer"/>
+    <fullyQualifiedTypeName name="sorting.BubbleSort"/>
+    <fullyQualifiedTypeName name="sorting_AND_search.SelectioSort"/>
+    <fullyQualifiedTypeName name="Linked_List.Node"/>
+    <fullyQualifiedTypeName name="Linked_List.LinkedList"/>
+    <fullyQualifiedTypeName name="Linked_List.MainInt"/>
+    <fullyQualifiedTypeName name="Linked_List.BookNode"/>
+    <fullyQualifiedTypeName name="Linked_List.BookLL"/>
+    <fullyQualifiedTypeName name="doublyLinkedList.PrimeLL"/>
+    <fullyQualifiedTypeName name="doublyLinkedList.OperationDoublyLL"/>
+    <fullyQualifiedTypeName name="singlyCircular.SinglyCircular"/>
+    <fullyQualifiedTypeName name="dynamicStackLL.DynamicStack"/>
+    <fullyQualifiedTypeName name="dynamicStackLL.StackOddEven"/>
+    <fullyQualifiedTypeName name="dynamicStackBook.StackLL"/>
+    <fullyQualifiedTypeName name="Queue.EmpQueue"/>
+    <fullyQualifiedTypeName name="binarySearchTree.Node"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+</qualifiedTypeNameHistroy>
